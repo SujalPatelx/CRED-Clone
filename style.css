@@ -1,0 +1,562 @@
+@font-face {
+    font-family: glory-bold;
+    src: url(./font_main/Gilroy-Bold.ttf);
+}
+
+@font-face {
+    font-family: glory-semiBold;
+    src: url(./font_main/Gilroy-SemiBold.woff);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.lan-page {
+    width: 100%;
+    height: 110vh;
+    flex-direction: column;
+    background-color: #101010;
+}
+
+.nav-container {
+    width: 100%;
+    height: 28vh;
+    padding-inline: 15vw;
+    /* background-color: red; */
+    justify-content: space-between;
+    font-family: glory-bold;
+    font-weight: 900;
+    font-size: 1.4vw;
+}
+
+.home-content-container {
+    width: 100%;
+    height: calc(110vh - 28vh);
+    padding-top: 6vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: green; */
+}
+
+
+/* **********MAIN NAVBAR CSS HERE********** */
+
+.nav-container .nav-logo-container img {
+    height: 10vh;
+}
+
+.nav-option-container {
+    gap: 55px;
+}
+
+.nav-option-container a {
+    text-decoration: none;
+    color: #c6c6c6;
+}
+
+
+/* **********HOME PAGE CSS********** */
+
+.home-content-container {
+    font-family: glory-bold;
+    text-align: center;
+}
+
+.home-content-container .first-para {
+    font-size: 7.5vw;
+    color: #fff;
+    letter-spacing: -2px;
+}
+
+.home-content-container .second-para {
+    margin-top: 5vh;
+    font-size: 2.2vw;
+    color: #fff;
+}
+
+.home-content-container .home-donwload-btn {
+    margin-top: 9vh;
+    width: 22vw;
+    height: 10vh;
+    border-radius: 50px;
+    background-color: #fff;
+    font-family: glory-bold;
+    font-size: 1.7vw;
+    font-style: bold;
+    color: black;
+}
+
+
+
+
+/* ********** MAIN IMAGE ANIMATION *********** */
+
+.main-img-anim {
+    width: 100%;
+    height: 150vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-container {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://web-images.credcdn.in/_next/assets/images/home-page/video-bg.png");
+}
+
+.img-com {
+    width: 400px;
+    position: absolute;
+    left: 50%;
+}
+
+.img-pop-center {
+    bottom: -8%;
+    transform: translate(-50%, 0%);
+    z-index: 100;
+}
+
+.img-pop-l1 {
+    bottom: -16%;
+    transform: translate(-105%, 0%);
+    z-index: 99;
+}
+
+.img-pop-l2 {
+    bottom: -24%;
+    transform: translate(-160%, 0%);
+    z-index: 98;
+}
+
+.img-pop-r1 {
+    bottom: -16%;
+    transform: translate(5%, 0%);
+    z-index: 99;
+}
+
+.img-pop-r2 {
+    bottom: -24%;
+    transform: translate(60%, 0%);
+    z-index: 98;
+}
+
+
+
+
+/* ********** MAIN PINK INFO SECTION ***********/
+
+.pink-info-container {
+    width: 100%;
+    height: 120vh;
+    background-image: url(./img_main/pink-pic.webp);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15vw;
+}
+
+.pink-f-para {
+    display: flex;
+    align-items: center;
+}
+
+.pink-s-para {
+    margin-top: 3vh;
+}
+
+.pink-f-para p {
+    font-family: glory-bold;
+    font-size: 7.5vw;
+    color: #f7e4e9;
+    line-height: 14vh;
+    letter-spacing: -5px;
+}
+
+.pink-s-para p:nth-child(1) {
+    color: #f8f8f8;
+    font-size: 2.3vw;
+    font-family: glory-bold;
+}
+
+.pink-s-para p:nth-child(2) {
+    max-width: 620px;
+    line-height: 28px;
+    color: #f8f8e9;
+    font-family: glory-bold;
+    font-size: 1.3vw;
+}
+
+.pink-section-btn {
+    width: 22vw;
+    height: 10vh;
+    margin-top: 5vh;
+    background-color: #ffffff;
+    border-radius: 10vw;
+    font-size: 1.7vw;
+    font-family: glory-bold;
+}
+
+
+
+
+/* ********** MAIN BRAND SECTION CSS*********** */
+
+.main-brand-section {
+    width: 100%;
+    height: 40vh;
+    padding-inline: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.brand-text-para {
+    font-size: 1.7vw;
+    font-family: glory-bold;
+    color: #212426;
+}
+
+.brand-img img {
+    width: 100%;
+}
+
+
+
+/* ********* MAIN BLUE PICTURE SECTION CSS ********** */
+
+.blue-info-container {
+    width: 100%;
+    height: 120vh;
+    padding-left: 15vw;
+    padding-top: 30vh;
+    background-image: url(./img_main/blue-pic.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.blue-f-para p {
+    font-size: 7.6vw;
+    font-family: glory-bold;
+    color: #e3e6f2;
+    letter-spacing: -3px;
+    line-height: 14vh;
+}
+
+.blue-s-para {
+    margin-top: 3vh;
+}
+
+.blue-s-para p:nth-child(1) {
+    font-size: 2.5vw;
+    color: #f8f8f8;
+    font-family: glory-bold;
+}
+
+.blue-s-para p:nth-child(2) {
+    font-size: 1.3vw;
+    color: #f8f8f8;
+    font-family: glory-bold;
+    max-width: 620px;
+    line-height: 25px;
+}
+
+.blue-section-btn {
+    width: 26vw;
+    height: 10vh;
+    margin-top: 50px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    font-size: 1.7vw;
+    font-family: glory-bold;
+}
+
+
+
+
+
+/* ********** FIXED IMAGE SECTION CSS ********** */
+
+.fixed-img-container {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(./img_main/neopop-image-mock.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+
+
+/* ********** MAIN RATING SECTION CSS ********** */
+
+.main-rate-section {
+    width: 100%;
+    height: 150vh;
+    background-color: #101010;
+    padding: 10vh 15vw;
+}
+
+.main-rate-container {
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-rate {
+    width: 100%;
+    height: 60%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: glory-bold;
+    /* background-color: yellow; */
+}
+
+.s-rate {
+    width: 100%;
+    height: 30%;
+    /* background-color: green; */
+}
+
+.f-rate .app-store-rate {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.f-rate .play-store-rate {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.rate-para-com {
+    font-size: 12vw;
+    color: #e8e8e8;
+}
+
+.rate-platform-para-com {
+    font-size: 4.2vw;
+    color: #e8e8e8;
+    line-height: 7.5vh;
+}
+
+.para-img-container img {
+    height: 4.4vh;
+    margin-top: 2vh;
+}
+
+.rate-download-btn {
+    width: 22vw;
+    height: 11vh;
+    border-radius: 8vw;
+    background-color: #ffffff;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: .3vw;
+    margin-top: 5.8vh;
+    font-size: 1.4vw;
+    font-family: glory-bold;
+}
+
+
+.play-store img {
+    height: 6vh;
+    margin-bottom: 10px;
+}
+
+.apple-store img {
+    height: 7vh;
+    margin-bottom: 12px;
+}
+
+
+
+
+/* ********** MAIN TEXT SLIDER ********** */
+
+.swiper {
+    width: 80%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 1.3vw;
+    font-family: glory-semiBold;
+    line-height: 4.4vh;
+    color: #ffff;
+    background: transparent;
+    display: flex;
+    gap: 3.2vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+    background-color: #4d4d4d;
+}
+
+
+
+
+/* ********** FOOTER SECTION CSS ********** */
+
+footer {
+    width: 100%;
+    height: 120vh;
+    background-color: #161517;
+    padding: 10vh 15vw;
+}
+
+.main-footer-container {
+    width: 100%;
+    height: 100%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    color: #a7a7a8;
+    font-family: glory-semiBold;
+}
+
+.footer-f-container {
+    height: 100%;
+    /* background-color: yellow; */
+}
+
+.f-f-logo img {
+    height: 9vh;
+}
+
+.f-c-below-log img {
+    height: 10.5vh;
+    margin-top: 100px;
+}
+
+.f-s-para {
+    font-family: glory-bold;
+    margin-top: 40px;
+}
+
+.f-s-para p:nth-child(1) {
+    font-size: 22px;
+    color: #e8e8e8;
+}
+
+.f-s-para p:nth-child(2) {
+    max-width: 400px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.footer-c-container {
+    height: 100%;
+    margin-left: 50px;
+    /* background-color: green; */
+}
+
+.c-f-products .products-para {
+    font-size: 21px;
+    color: #e8e8e8;
+    font-family: glory-bold;
+}
+
+.c-f-products-options {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+}
+.c-f-products-options p:nth-child(2){
+    line-height: 30px;
+}
+
+.c-s-resources {
+    margin-top: 120px;
+}
+
+.resources-para{
+    font-family: glory-bold;
+    font-size: 22px;
+    color: #e8e8e8;
+}
+
+.c-s-resources-options{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 19px;
+}
+
+.footer-l-container{
+    height: 100%;
+    margin-left: 150px;
+}
+
+.footer-cred-para{
+    font-size: 22px;
+    font-family: glory-bold;
+    color: #e8e8e8;
+}
+
+.footer-policy-para{
+    margin-top: 50px;
+    font-size: 22px;
+    font-family: glory-bold;
+    color: #e8e8e8;
+}
+
+
+.l-f-cred-options{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 19px;
+}
